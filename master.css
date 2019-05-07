@@ -7,12 +7,15 @@ html, body {
   color: #333;
   max-width: 100%;
 }
-.fullscreenbgimg {
-  background-image: url("img/coverimg.jpg");
+.fullscreenbg {
   height: 100%;
   background-position: center;
-  background-repeat: no-repeat;
   background-size: cover;
+  background-repeat: no-repeat;
+}
+.landingimg {
+  /* background-image: url("img/coverimg.jpg"); */
+  background-image: linear-gradient(#0052a5, #0B0C10, lightgrey);
 }
 .coverbox {
   display: flex;
@@ -33,9 +36,10 @@ html, body {
   text-decoration: none;
   color: white;
   transition: color .4s ease-in-out;
+  padding: 0 .2rem;
 }
 .coverboxlinks a:hover {
-  color: grey;
+  color: black;
   transition: color .4s ease-in-out;
 }
 section {
@@ -44,9 +48,9 @@ section {
   text-align: center;
 }
 /* About me  */
-#aboutme h1 {
-  margin-top: 5rem;
-}
+#aboutme {
+  background-image: linear-gradient(lightgrey, darkgrey, #0052a5);
+}}
 #aboutmedesc{
   font-size: 1.5rem;
 }
@@ -65,8 +69,17 @@ section {
   font-size: 1.2rem;
   font-weight: 400;
 }
-
 /* Portfolio */
+#portfolio {
+  background-image: linear-gradient(#0052a5, lightblue, grey);
+}
 #portfolio h1 {
   margin-top: 3rem;
+}
+.eswtext {
+  padding: 0 4.5rem;
+}
+/* Contact me */
+#contactme {
+  background-image: linear-gradient(grey, darkgrey, #0052a5);
 }
