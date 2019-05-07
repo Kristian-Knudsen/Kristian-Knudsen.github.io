@@ -56,8 +56,8 @@ section {
   display: flex;
   align-items: center;
   justify-content: center;
-}}
-.aboutmedesc {
+}
+#aboutmedesc {
   font-size: 1.188rem;
 }
 .skills {
@@ -101,4 +101,13 @@ section {
 /* Contact me */
 #contactme {
   background-image: linear-gradient(#1F2833, #0B0C10);
+}
+/* footer */
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  color: white;
+  text-align: center;
 }
