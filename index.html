@@ -3,80 +3,105 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
-    <link rel="stylesheet" href="master.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="The portfolio site of the web developer Kristian Knudsen">
+
     <title>Kristian Knudsen</title>
+    <link rel="stylesheet" href="assets/css/master.css">
   </head>
   <body>
-    <div class="landingimg fullscreenbg coverbox">
-      <h1>Kristian Knudsen</h1>
-      <h2>Web developer</h2>
-      <div class="coverboxlinks">
-        <a href="#aboutme" data-scroll>About me</a>
-        <a href="#portfolio" data-scroll>Portfolio</a>
-        <a href="#contactme" data-scroll>Contact me </a>
+      <div id="particles-js">
+        <div class="header">
+            <h1>
+              <span class="site-title">Kristian Knudsen</span>
+              <span class="site-description">Web developer</span>
+            </h1>
+            <div class="header-links">
+              <a class="link" href="#about" data-scroll>About Me</a>
+              <a class="link" href="#projects" data-scroll>Portfolio</a>
+              <a class="link" href="#contact" data-scroll>Contact me</a>
+            </div>
+            <div class="landing-icons">
+              <a aria-label="My Linked In" target="_blank" href="https://www.linkedin.com/in/kristian-knudsen-2aa755127"><i class="icon fa fa-linkedin-square custom_icons" aria-hidden="true"></i></a>
+              <a aria-label="My Github" target="_blank" href="https://github.com/Paradiable"><i class="icon fa fa-github-alt custom_icons" aria-hidden="true"></i></a>
+            </div>
+        </div>
+        <a class="down" href="#about" data-scroll><i class="icon fa fa-chevron-down" aria-hidden="true"></i></a>
       </div>
-    </div>
-    <section class="fullscreenbg" id="aboutme">
-      <div class="container">
-        <h1>Who am I?</h1>
-        <p id="aboutmedesc">Currently in the danish school system - part time student (studying physics and math), <br>and part time programmer, i try to excel at what I enjoy the most - Programming. <br> Currently 19 and been developing for 5 years.</p>
-        <div class="row skills">
-          <div class="col-md-4">
-            <div class="subskill">
+      <section id="about">
+        <div class="user-details">
+          <h1> Who am I? </h1>
+          <p id="my_desc"> Currently in the danish school system - part time student (studying physics and math), and part time programmer, i try to excel at what I enjoy the most - Programming. Currently 19 and been developing for 5 years. </p>
+        </div>
+          <div class="user">
+            <div class="tech">
               <h2>Design</h2>
               <i class="devicon-html5-plain-wordmark colored"></i>
               <i class="devicon-bootstrap-plain-wordmark colored"></i>
               <i class="devicon-css3-plain-wordmark colored"></i>
-              <p>Every website needs a cool-looking visual design. Its the core in giving the user a good experience.</p>
+              <p>Every website needs a cool-looking visual design. Its the core in giving the user a good experience. I also work with Jekyll.</p>
             </div>
-          </div>
-          <div class="col-md-4">
-            <div class="subskill">
+            <div class="tech">
               <h2>Code</h2>
               <i class="devicon-javascript-plain colored"></i>
-              <i style="color: #3586cc;" class="devicon-python-plain"></i>
+              <i class="devicon-python-plain-wordmark"></i>
               <i class="devicon-php-plain colored"></i>
               <p>Every website also needs some coding that gives functionality. I use the mentioned languages for giving the best experience to the user.</p>
             </div>
-          </div>
-          <div class="col-md-4">
-            <div class="subskill">
+            <div class="tech">
               <h2>Tools</h2>
               <i class="devicon-git-plain-wordmark colored"></i>
               <i class="devicon-mysql-plain-wordmark colored"></i>
               <i class="devicon-atom-original-wordmark"></i>
               <p>Tools is essiential to have a smooth process in developing the product. I use a variety of tools including IDE's, version-controllers etc.</p>
             </div>
+        </div>
+      </section>
+      <section id="projects">
+        <div class="user-details">
+          <h1> Featured Projects </h1>
+        </div>
+        <div class="user-projects">
+          <div class="images-left">
+            <img alt="easywordsearch" src="assets/easywordsearch.png" />
+          </div>
+          <div class="contents-right">
+            <h3> Easy Word Search</h3>
+            <!-- <ul>
+              <li> Featured Skills</li>
+            </ul> -->
+            <p>Easy Word Search (EWS) is an advanced script, that allows the user to search through a folder for a specific keyword and quickly lets the user know how many hits the search has returned. Go check it out on my github page - or download it today! Its free of usage! </p>
+            <a class="project-link" href="https://github.com/Paradiable/Easy-Word-Search/" target="_blank">Check it out</a>
+            <!--<i>The website is not currently ready for preview, but im working on it</i>-->
           </div>
         </div>
-      </div>
-    </section>
-    <section class="fullscreenbg" id="portfolio">
-      <h1>Portfolio</h1>
-      <div class="container mt-4">
-        <div class="row">
-          <div class="col-md-8">
-            <h2>Easy Word Search</h2>
-            <p class="eswtext">Easy Word Search (EWS) is an advanced script, that allows the user to search through a folder for a specific keyword and quickly lets the user know how many hits the search has returned. Go check it out on my github page - or download it today! Its free of usage!</p>
-            <a class="btn btn-outline-custom" href="#" role="button">Check it out</a>
-          </div>
-          <div class="col-md-4">
-            <img src="img/easywordsearch.png" alt="EasyWordSearch">
-          </div>
+      </section>
+      <section id="contact">
+        <div class="user-details">
+          <h1> Contact me </h1>
         </div>
-      </div>
-    </section>
-    <footer>
-      <p>Created by Kristian Knudsen - 2019</p>
-    </footer>
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-    <script src="https://unpkg.com/sweet-scroll/sweet-scroll.min.js"></script>
-    <script>
-      document.addEventListener('DOMContentLoaded', () => {const scroller = new SweetScroll({});},false,);
-    </script>
+        <form id="contact" action="https://formspree.io/timonogcuda@gmail.com" method="post">
+          <div class="container">
+            <input type="text" name="name" placeholder="Name" /><br />
+            <input  type="email" name="email" placeholder="Email" /><br />
+            <textarea type="text" name="message" placeholder="Message"></textarea><br />
+            <div class="message">Message Sent</div>
+            <button id="submit" type="submit">
+              Send!
+            </button>
+          </div>
+        </form>
+        <div class="header-icons">
+          <a aria-label="My Linked In" target="_blank" href="https://www.linkedin.com/in/kristian-knudsen-2aa755127"><i class="custom_icons icon fa fa-linkedin-square" aria-hidden="true"></i></a>
+          <a aria-label="My Github" target="_blank" href="https://github.com/Paradiable"><i class="custom_icons icon fa fa-github-alt" aria-hidden="true"></i></a>
+        </div>
+        </div>
+      </section>
+      <footer class="footer">
+        <p>&copy; Kristian Knudsen - 2019</p>
+        <p>This site is build with <span class="love">❤</span> by Kristian Knudsen</a></p>
+      </footer>
+      <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+      <script src="assets/js/sweet-scroll.min.js"></script>
+      <script src="assets/js/main.js"></script>
   </body>
-</html>

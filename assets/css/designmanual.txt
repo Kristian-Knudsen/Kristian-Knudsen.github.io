@@ -1,0 +1,7 @@
+				## clean and modern ##
+		Name				  HEX		     RGB
+black: 						#17252a		(23,37,42)
+darkturquoise: 				#2b7a78		(43,122,120)
+lightturquoise:				#3aafa9		(58,175,169)
+very light turquoise: 		#def2f1		(222,242,241)
+white: 						#feffff		(254,255,255)
