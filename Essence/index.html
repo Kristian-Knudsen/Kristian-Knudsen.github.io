@@ -35,33 +35,40 @@
             justify-content: center;
 
             height: 100%;
-        }
-        .content {
-            background-color: rgba(0,0,0,.50);
-            color: white;
+
+            flex-direction: column;
             text-align: center;
-            border-radius: 25px;
         }
-        .fullopacity {
-            opacity: 100%;
+        .btn-outline-white {
+            background-color: transparent;
+            border-color: white;
+            color: white;
+            transition: all .30s;
         }
-        .font {
-            font-family: 'Roboto', sans-serif;
+        .btn-outline-white:hover {
+            transition: all .30s;
+            background-color: white;
+            border-color: none;
+            color: green;
         }
-        .biggerfont {
-            font-size: 1.3em;
+        .limitwidth {
+            width: 35%;
         }
-        .form-control:focus {
-            border-color: #28a745!important;
-            box-shadow: 0 0 0 0.2rem rgba(40,167,90,.25)!important;
+        @media screen and (max-width: 768px) {
+            .limitwidth {
+                width: 75%;
+            }
         }
-        .icons-color {
-            color: inherit;
-            transition: color .25s;
+        #email-input::placeholder {
+            color: white; /* Changes placeholder text color */
         }
-        .icons-color:hover {
-            color:#28a745;
-            transition: color .25s;
+        #email-input {
+            background-color: transparent;
+            border-color: white;
+            color: white;
+        }
+        #email-input:focus {
+            box-shadow: 0 0 0 0.2rem rgba(59,164,72,.25);
         }
     </style>
 </head>
@@ -69,27 +76,12 @@
 <body>
     <div class="bg">
         <div class="centerbox">
-            <div class="content">
-                <h1 class="display-2 fullopacity font">Essence Tea</h1>
-                <p class="font biggerfont"><span class="text-success font biggerfont">Livet</span> er for kort til dårlig te!</p>
-                <p class="font biggerfont">Din hurtige vej til god te åbner snart! <br> Følg os herunder for at få besked når vi åbner!</p>
-                <form>
-                    <div class="form-group">
-                        <div class="input-group mb-3">
-                            <input type="email" class="form-control" placeholder="Din email adresse">
-                            <div class="input-group-append">
-                              <button class="btn btn-success" type="button">Informer mig</button>
-                            </div>
-                          </div>
-                      <small id="emailHelp" class="form-text text-white">Psst... Bare rolig! Vi deler ikke dine informationer med nogen!<br>Når du trykker 'informer mig' accepterer du vilkåerne!</small>
-                    </div>
-                </form>
-                <div class="mb-2">
-                    <a class="icons-color" href="#!"><i class="fab fa-instagram fa-3x mx-2 text-reset"></i></a>
-                    <a class="icons-color" href="#!"><i class="fab fa-facebook fa-3x mx-2 text-reset"></i></a>
-                    <a class="icons-color" href="#!"><i class="fab fa-linkedin fa-3x mx-2 text-reset"></i></a>
-                </div>
-            </div>
+            <img class="bg-transparent mb-2" src="EssenceLogo.png" height="40%">
+            <h5 class="text-white">Er du nysgerrig på hvornår vi åbner for webshoppen?</h5>
+            <h6 class="text-white">Skriv dig op til vores nyhedsbrev, og bliv blandt de første besøgende <br>– vi tilgodeser dig også med 10% rabat på første ordre</h6>
+            <input id="email-input" type="email" class="form-control limitwidth my-2 text-center" placeholder="Indtast din e-mail her..." aria-label="email">
+            <button type="button" class="btn btn-outline-white">Tilmeld dig</button>
+            <small class="form-text text-white mt-4">Psst... Bare rolig - vi deler ikke dine informationer med tredje part. <br> Når du trykker ’Tilmeld mig' accepterer du vilkårene</small>
         </div>
     </div>
 
