@@ -14,7 +14,7 @@
   background: var(--main-gradient);
 }
 #my_desc {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
 }
 .row {
   display: flex;
@@ -671,7 +671,7 @@ body {
 .project-link {
   display: block;
   width: 6.25rem;
-  margin: 0.625rem 0;
+  margin: 0 auto;
   padding: 0.3125rem;
   color: var(--main-color);
   background-color: transparent;
@@ -820,4 +820,7 @@ label.error {
   border-radius:6px;
   background-color:#2ABCA7;
   font-size:1.1em;
+}
+.tech p {
+  font-size: 1.1rem;
 }
